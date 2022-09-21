@@ -1,3 +1,4 @@
+# 【飞桨特色模型挑战赛】第六题 CTRGCN的轻量化
 # 一、简介
 <font size="3" color="black" face ="幼圆">本repo从[AI Studio项目](https://aistudio.baidu.com/aistudio/projectdetail/4572025?contributionType=1&sUid=60677&shared=1&ts=1663767294380)迁移而来，移步[AI Studio项目](https://aistudio.baidu.com/aistudio/projectdetail/4572025?contributionType=1&sUid=60677&shared=1&ts=1663767294380)fork运行最佳。</font>
 ## 1.1 任务要求
