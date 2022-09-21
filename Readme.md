@@ -1,5 +1,5 @@
 # 一、简介
-<font size="3" color="black" face ="幼圆">本repo从[AI Studio项目](http://)迁移而来，移步[AI Studio项目](http://)fork运行最佳。</font>
+<font size="3" color="black" face ="幼圆">本repo从[AI Studio项目](https://aistudio.baidu.com/aistudio/projectdetail/4572025?contributionType=1&sUid=60677&shared=1&ts=1663767294380)迁移而来，移步[AI Studio项目](https://aistudio.baidu.com/aistudio/projectdetail/4572025?contributionType=1&sUid=60677&shared=1&ts=1663767294380)fork运行最佳。</font>
 ## 1.1 任务要求
 <font size="3" color="black" face ="幼圆">本次任务是要对[CTRGCN模型](https://arxiv.org/abs/2107.12213)进行轻量化，官方释放的在NTU-RGB+D数据集，joint模态，X-sub评测标准下的CTRGCN模型的Top1精度为`89.93%`，推理文件夹大小约为`14.5MB`（CTRGCN_joint.pdiparams：5.6MB，CTRGCN_joint.pdiparams.info：62.1KB，CTRGCN_joint.pdmodel：8.8MB），要求是：
 1. 对模型进行轻量化，在inference模型小于`10M`条件下，在NTU-RGB+D数据集，joint模态，X-sub评测标准，Top1指标大于`89%`且最优指标取胜；
