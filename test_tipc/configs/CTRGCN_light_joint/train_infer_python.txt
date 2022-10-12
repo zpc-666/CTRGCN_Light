@@ -34,7 +34,7 @@ distill_export:null
 export1:null
 export2:null
 inference_dir:null
-infer_model:./output/CTRGCN_light_my/CTRGCN_joint_best.pdparams
+infer_model:./output/CTRGCN_light_my/old/CTRGCN_light_joint_best.pdparams
 infer_export:tools/export_model.py -c configs/recognition/ctrgcn/ctrgcn_light_ntucs_joint.yaml
 infer_quant:False
 inference:tools/predict.py --config configs/recognition/ctrgcn/ctrgcn_light_ntucs_joint.yaml
