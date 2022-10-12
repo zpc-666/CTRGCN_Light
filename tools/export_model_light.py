@@ -143,7 +143,7 @@ def get_input_spec(cfg, model_name):
                       dtype='float32',
                       name='fast_input'),
         ]]
-    elif model_name in ['STGCN', 'AGCN', 'CTRGCN', "CTRGCN_joint", "CTRGCN_light_joint"]:
+    elif model_name in ['STGCN', 'AGCN', 'CTRGCN', "CTRGCN_joint", "CTRGCN_light_joint", 'CTRGCN_lightV2_joint']:
         input_spec = [
             InputSpec(shape=[
                 None, cfg.num_channels, cfg.window_size, cfg.vertex_nums,
@@ -206,7 +206,7 @@ def main():
     params = paddle.load(args.pretrained_params)
     model.set_dict(params)
 
-    if model_name in ['STGCN', 'AGCN', 'CTRGCN', "CTRGCN_joint", "CTRGCN_light_joint"]:
+    if model_name in ['STGCN', 'AGCN', 'CTRGCN', "CTRGCN_joint", "CTRGCN_light_joint", 'CTRGCN_lightV2_joint']:
         model = paddle.nn.Sequential(
             model.backbone,
             model.head
