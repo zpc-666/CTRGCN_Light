@@ -1,0 +1,132 @@
+Warning! No module named 'SimpleITK', [SimpleITK] package and it's dependencies is required for PP-Care.
+Warning! No module named 'SimpleITK', [SimpleITK] package and it's dependencies is required for PP-Care.
+Warning! No module named 'lmdb', [lmdb] package and it's dependencies is required for ActBERT.
+Warning! No module named 'lmdb', [lmdb] package and it's dependencies is required for ActBERT.
+[10/12 09:19:17] [35mDATASET[0m : 
+[10/12 09:19:17]     [35mbatch_size[0m : [92m32[0m
+[10/12 09:19:17]     [35mnum_workers[0m : [92m4[0m
+[10/12 09:19:17]     [35mtest[0m : 
+[10/12 09:19:17]         [35mfile_path[0m : [92mdata/ntu-rgb-d/xsub/val_data.npy[0m
+[10/12 09:19:17]         [35mformat[0m : [92mSkeletonDataset[0m
+[10/12 09:19:17]         [35mlabel_path[0m : [92mdata/ntu-rgb-d/xsub/val_label.pkl[0m
+[10/12 09:19:17]         [35mtest_mode[0m : [92mTrue[0m
+[10/12 09:19:17]     [35mtest_batch_size[0m : [92m64[0m
+[10/12 09:19:17]     [35mtest_num_workers[0m : [92m0[0m
+[10/12 09:19:17]     [35mtrain[0m : 
+[10/12 09:19:17]         [35mfile_path[0m : [92mdata/ntu-rgb-d/xsub/train_data.npy[0m
+[10/12 09:19:17]         [35mformat[0m : [92mSkeletonDataset[0m
+[10/12 09:19:17]         [35mlabel_path[0m : [92mdata/ntu-rgb-d/xsub/train_label.pkl[0m
+[10/12 09:19:17]     [35mvalid[0m : 
+[10/12 09:19:17]         [35mfile_path[0m : [92mdata/ntu-rgb-d/xsub/val_data.npy[0m
+[10/12 09:19:17]         [35mformat[0m : [92mSkeletonDataset[0m
+[10/12 09:19:17]         [35mlabel_path[0m : [92mdata/ntu-rgb-d/xsub/val_label.pkl[0m
+[10/12 09:19:17]         [35mtest_mode[0m : [92mTrue[0m
+[10/12 09:19:17] ------------------------------------------------------------
+[10/12 09:19:17] [35mINFERENCE[0m : 
+[10/12 09:19:17]     [35mname[0m : [92mCTRGCN_Inference_helper[0m
+[10/12 09:19:17]     [35mnum_channels[0m : [92m3[0m
+[10/12 09:19:17]     [35mp_interval[0m : [92m[0.95][0m
+[10/12 09:19:17]     [35mperson_nums[0m : [92m2[0m
+[10/12 09:19:17]     [35mvertex_nums[0m : [92m25[0m
+[10/12 09:19:17]     [35mwindow_size[0m : [92m64[0m
+[10/12 09:19:17] ------------------------------------------------------------
+[10/12 09:19:17] [35mMETRIC[0m : 
+[10/12 09:19:17]     [35mname[0m : [92mSkeletonMetric[0m
+[10/12 09:19:17] ------------------------------------------------------------
+[10/12 09:19:17] [35mMIX[0m : 
+[10/12 09:19:17]     [35malpha[0m : [92m0.2[0m
+[10/12 09:19:17]     [35mname[0m : [92mMixup[0m
+[10/12 09:19:17] ------------------------------------------------------------
+[10/12 09:19:17] [35mMODEL[0m : 
+[10/12 09:19:17]     [35mbackbone[0m : 
+[10/12 09:19:17]         [35madaptive[0m : [92mTrue[0m
+[10/12 09:19:17]         [35mbase_channel[0m : [92m62[0m
+[10/12 09:19:17]         [35mgraph[0m : [92mntu_rgb_d[0m
+[10/12 09:19:17]         [35mgraph_args[0m : 
+[10/12 09:19:17]             [35mlabeling_mode[0m : [92mspatial[0m
+[10/12 09:19:17]         [35min_channels[0m : [92m3[0m
+[10/12 09:19:17]         [35mname[0m : [92mCTRGCN_lightV2[0m
+[10/12 09:19:17]         [35mnum_person[0m : [92m2[0m
+[10/12 09:19:17]         [35mnum_point[0m : [92m25[0m
+[10/12 09:19:17]     [35mframework[0m : [92mRecognizerGCN[0m
+[10/12 09:19:17]     [35mhead[0m : 
+[10/12 09:19:17]         [35mdrop_out[0m : [92m0[0m
+[10/12 09:19:17]         [35min_channels[0m : [92m62[0m
+[10/12 09:19:17]         [35mls_eps[0m : [92m0.1[0m
+[10/12 09:19:17]         [35mname[0m : [92mCTRGCNHead[0m
+[10/12 09:19:17]         [35mnum_classes[0m : [92m60[0m
+[10/12 09:19:17] ------------------------------------------------------------
+[10/12 09:19:17] [35mOPTIMIZER[0m : 
+[10/12 09:19:17]     [35mlearning_rate[0m : 
+[10/12 09:19:17]         [35mcosine_base_lr[0m : [92m0.1[0m
+[10/12 09:19:17]         [35miter_step[0m : [92mTrue[0m
+[10/12 09:19:17]         [35mmax_epoch[0m : [92m100[0m
+[10/12 09:19:17]         [35mname[0m : [92mCustomWarmupCosineDecay[0m
+[10/12 09:19:17]         [35mwarmup_epochs[0m : [92m10[0m
+[10/12 09:19:17]         [35mwarmup_start_lr[0m : [92m0.01[0m
+[10/12 09:19:17]     [35mmomentum[0m : [92m0.9[0m
+[10/12 09:19:17]     [35mname[0m : [92mMomentum[0m
+[10/12 09:19:17]     [35muse_nesterov[0m : [92mTrue[0m
+[10/12 09:19:17]     [35mweight_decay[0m : 
+[10/12 09:19:17]         [35mname[0m : [92mL2[0m
+[10/12 09:19:17]         [35mvalue[0m : [92m0.0004[0m
+[10/12 09:19:17] ------------------------------------------------------------
+[10/12 09:19:17] [35mPIPELINE[0m : 
+[10/12 09:19:17]     [35mtest[0m : 
+[10/12 09:19:17]         [35msample[0m : 
+[10/12 09:19:17]             [35mIden[0m : [92mNone[0m
+[10/12 09:19:17]             [35mSketeonCropSample[0m : 
+[10/12 09:19:17]                 [35mp_interval[0m : [92m[0.95][0m
+[10/12 09:19:17]                 [35mwindow_size[0m : [92m64[0m
+[10/12 09:19:17]         [35mtransform[0m : 
+[10/12 09:19:17]             [35mRandomRotation[0m : 
+[10/12 09:19:17]                 [35margument[0m : [92mFalse[0m
+[10/12 09:19:17]             [35mSketeonModalityTransform[0m : 
+[10/12 09:19:17]                 [35mbone[0m : [92mFasle[0m
+[10/12 09:19:17]                 [35mgraph[0m : [92mntu_rgb_d[0m
+[10/12 09:19:17]                 [35mjoint[0m : [92mTrue[0m
+[10/12 09:19:17]                 [35mmotion[0m : [92mFalse[0m
+[10/12 09:19:17]     [35mtrain[0m : 
+[10/12 09:19:17]         [35msample[0m : 
+[10/12 09:19:17]             [35mIden[0m : [92mNone[0m
+[10/12 09:19:17]             [35mSketeonCropSample[0m : 
+[10/12 09:19:17]                 [35mp_interval[0m : [92m[0.5, 1][0m
+[10/12 09:19:17]                 [35mwindow_size[0m : [92m64[0m
+[10/12 09:19:17]         [35mtransform[0m : 
+[10/12 09:19:17]             [35mRandomRotation[0m : 
+[10/12 09:19:17]                 [35margument[0m : [92mTrue[0m
+[10/12 09:19:17]             [35mSketeonModalityTransform[0m : 
+[10/12 09:19:17]                 [35mbone[0m : [92mFasle[0m
+[10/12 09:19:17]                 [35mgraph[0m : [92mntu_rgb_d[0m
+[10/12 09:19:17]                 [35mjoint[0m : [92mTrue[0m
+[10/12 09:19:17]                 [35mmotion[0m : [92mFalse[0m
+[10/12 09:19:17]     [35mvalid[0m : 
+[10/12 09:19:17]         [35msample[0m : 
+[10/12 09:19:17]             [35mIden[0m : [92mNone[0m
+[10/12 09:19:17]             [35mSketeonCropSample[0m : 
+[10/12 09:19:17]                 [35mp_interval[0m : [92m[0.95][0m
+[10/12 09:19:17]                 [35mwindow_size[0m : [92m64[0m
+[10/12 09:19:17]         [35mtransform[0m : 
+[10/12 09:19:17]             [35mRandomRotation[0m : 
+[10/12 09:19:17]                 [35margument[0m : [92mFalse[0m
+[10/12 09:19:17]             [35mSketeonModalityTransform[0m : 
+[10/12 09:19:17]                 [35mbone[0m : [92mFasle[0m
+[10/12 09:19:17]                 [35mgraph[0m : [92mntu_rgb_d[0m
+[10/12 09:19:17]                 [35mjoint[0m : [92mTrue[0m
+[10/12 09:19:17]                 [35mmotion[0m : [92mFalse[0m
+[10/12 09:19:17] ------------------------------------------------------------
+[10/12 09:19:17] [35mepochs[0m : [92m2[0m
+[10/12 09:19:17] [35mlog_interval[0m : [92m100[0m
+[10/12 09:19:17] [35mmodel_name[0m : [92mCTRGCN_lightV2_joint[0m
+[10/12 09:19:17] [35moutput_dir[0m : [92m./test_tipc/output/CTRGCN_lightV2_joint/lite_train_lite_infer/norm_train_gpus_0_autocast_null_nodes_1[0m
+[10/12 09:19:17] [35msave_interval[0m : [92m10[0m
+W1012 09:19:17.084825  9714 gpu_resources.cc:61] Please NOTE: device: 0, GPU Compute Capability: 7.0, Driver API Version: 11.2, Runtime API Version: 11.2
+W1012 09:19:17.088369  9714 gpu_resources.cc:91] device: 0, cuDNN Version: 8.2.
+[10/12 09:19:18] Loading data, it will take some moment...
+[10/12 09:19:20] Data Loaded!
+[10/12 09:19:20] Training in fp32 mode.
+[10/12 09:19:23] [35mepoch:[  1/2  ][0m [95mtrain step:0   [0m [92mloss: 4.84049 lr: 0.010000 top1: 0.03125 top5: 0.09375[0m [92mbatch_cost: 2.45275 sec,[0m [92mreader_cost: 0.59934 sec,[0m ips: 13.04656 instance/sec, eta: 1:42:19
+[10/12 09:19:27] [31mEND epoch:1  [0m [95mtrain[0m [92mloss_avg: 4.23142  top1_avg: 0.03208 top5_avg: 0.14560[0m [92mavg_batch_cost: 0.14794 sec,[0m [92mavg_reader_cost: 0.00028 sec,[0m [92mbatch_cost_sum: 6.78770 sec,[0m avg_ips: 141.43233 instance/sec.
+[10/12 09:19:28] [35mepoch:[  2/2  ][0m [95mtrain step:0   [0m [92mloss: 4.11528 lr: 0.010210 top1: 0.00000 top5: 0.09371[0m [92mbatch_cost: 0.43173 sec,[0m [92mreader_cost: 0.27369 sec,[0m ips: 74.11982 instance/sec, eta: 0:00:00
+[10/12 09:19:32] [31mEND epoch:2  [0m [95mtrain[0m [92mloss_avg: 3.97708  top1_avg: 0.04483 top5_avg: 0.19767[0m [92mavg_batch_cost: 0.14904 sec,[0m [92mavg_reader_cost: 0.00018 sec,[0m [92mbatch_cost_sum: 4.72504 sec,[0m avg_ips: 203.17268 instance/sec.
+[10/12 09:19:32] training CTRGCN_lightV2_joint finished
